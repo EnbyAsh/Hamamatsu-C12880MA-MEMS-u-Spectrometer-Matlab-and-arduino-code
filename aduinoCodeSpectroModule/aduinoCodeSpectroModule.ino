@@ -33,12 +33,13 @@ void setup() {
 
   digitalWrite(SPEC_CLK, HIGH); // Set SPEC_CLK High
   digitalWrite(SPEC_ST, LOW); // Set SPEC_ST Low
-  while ( x < 15){
-    digitalWrite(WHITE_LED, HIGH);
-    delay(1); 
+  while ( x < 30){
+    digitalWrite(WHITE_LED, HIGH); 
     digitalWrite(WHITE_LED, LOW);
     x++;
   }
+  digitalWrite(WHITE_LED, HIGH);
+  
   digitalWrite(WHITE_LED, HIGH); // uncoment to set wight lite led on
  // digitalWrite(LASER_404, HIGH); // uncoment to tern on laser light
   analogWrite(TRANS_LED,  PWM_VALUE); // uncoment to tern of seperate wight light led
